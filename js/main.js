@@ -1,15 +1,24 @@
 $(function () {
   //СЧЕТЧИК АКЦИИ
-  $("#countdown").timeTo({
-    timeTo: new Date(
-      new Date("Thu Jun 16 2022 09:00:00 GMT+0300 (Москва, стандартное время)")
-    ),
-    displayDays: 2,
-    displayCaptions: true,
-    fontSize: 48,
-    captionSize: 14,
-    lang: "ru",
-  });
+    loopcounter('counter-inner');
+
+
+    //Модальное окно на главной
+
+    $(".add-sale").on("click", function () {
+        $(".modal-wrapper").css("display", "block");
+    });
+
+    $(".close-btn").on("click", function () {
+        $(".modal-wrapper").css("display", "none");
+    });
+
+    //slick-slider слайдер с популярными товарами
+
+ $(".popular-inner").slick({
+    slidesToShow: 3,
+     centerPadding: '60px',
+ });
 
 });
 

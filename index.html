@@ -2,235 +2,443 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Prompt:wght@500;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/timeTo.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Prompt:wght@500;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 
-  <header class="header">
+<header class="header">
     <div class="container">
-      <div class="header-wrapper">
-        <div class="logo">
-          <img src="images/icons/logo.webp" alt="logo" class="logo-img">
-        </div>
-        <div class="header-oficial-text">
-          <p class="oficial-text">
-            Официальный дилер
-            сайдинга и фасадных
-            панелей Döcke
-          </p>
-        </div>
-        <div class="header-phone">
-          <div class="phone-num">
-            <a href="tel:+74991234567" class="phone-link">+7 (499) 123-45-67</a>
-          </div>
-          <div class="whatsapp">
-            <a href="https://web.whatsapp.com/send?phone=79061234567" class="whatsapp-link">WhatsApp +7 (906)
-              123-45-67</a>
-          </div>
-        </div>
-        <button class="header-callback">
-          <span>Заказать звонок</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="container">
-      <!-- <div class="modal-wrapper">
-        <form action="#">
-          <span class="input-text">Оставте номер мы перезвоним</span>
-          <label class="modal-inner">
-            <button class="modal-btn" name="#" type="submit">Закать звонок</button>
-            <input class="input-btn" name="#" type="text" placeholder="Ваш телефон">
-          </label>
-        </form>
-      </div> -->
-      <div class="main-content">
-        <div class="text-wrapper">
-          <h1 class="main-title">Сайдинг, фасадные панели, водосток, дренаж напрямую от завода-изготовителя по лучшей
-            цене</h1>
-          <div class="content-inner">
-            <button class="add-sale">
-              <span>Рассчитать стоимость</span>
+        <div class="header-wrapper">
+            <div class="logo">
+                <img src="images/icons/logo.webp" alt="logo" class="logo-img">
+            </div>
+            <div class="header-oficial-text">
+                <p class="oficial-text">
+                    Официальный дилер
+                    сайдинга и фасадных
+                    панелей Döcke
+                </p>
+            </div>
+            <div class="header-phone">
+                <div class="phone-num">
+                    <a href="tel:+74991234567" class="phone-link">+7 (499) 123-45-67</a>
+                </div>
+                <div class="whatsapp">
+                    <a href="https://web.whatsapp.com/send?phone=79061234567" class="whatsapp-link">WhatsApp +7 (906)
+                        123-45-67</a>
+                </div>
+            </div>
+            <button class="header-callback">
+                <span>Заказать звонок</span>
             </button>
-            <p class="sale-sale">И получить скидку до <span class="red-title">10%</span> </p>
-          </div>
-          <div class="counter-wrapper">
-            <p class="text-counter">До окончания скидки осталось</p>
-            <div id="countdown"></div>
-          </div>
         </div>
-        <div class="bg-main">
-          <img src="images/bg.png" alt="" class="bg-img">
-        </div>
-      </div>
     </div>
-  </main>
+</header>
 
-  <section class="reasons">
+<main class="main">
     <div class="container">
-      <div class="reasons-inner">
-        <div class="reasons-wrapper">
-          <div class="reasons-content">
-            <p class="big-decor">5</p>
-            <p class="reasons-decor-text">причин заказать у нас</p>
-          </div>
-          <div class="item-wrapper">
-            <div class="reasons-item">
-              <span class="reasons-decor"></span>
-              <p class="reasons-text">94% продукции в наличии</p>
-            </div>
-            <div class="reasons-item">
-              <span class="reasons-decor"></span>
-              <p class="reasons-text">Срок поставки до 48 часов (на товар в наличии)</p>
-            </div>
-            <div class="reasons-item">
-              <span class="reasons-decor"></span>
-              <p class="reasons-text">Принимаем возврат до 180 дней ПОШТУЧНО</p>
-            </div>
-            <div class="reasons-item">
-              <span class="reasons-decor"></span>
-              <p class="reasons-text">Реальные скидки от объёма</p>
-            </div>
-            <div class="reasons-item">
-              <span class="reasons-decor"></span>
-              <p class="reasons-text">Гарантия самой выгодной цены в Москве</p>
-            </div>
-          </div>
-        </div>
-        <div class="reasons-bg">
-          <img src="images/bg-decor.png" alt="" class="decor-bg">
-          <div class="pulse pulse-1"></div>
-          <div class="pulse pulse-2"></div>
-          <div class="pulse pulse-3"></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="products">
+        <div class="modal-wrapper">
+            <form action="#">
+                <span class="input-text">Оставте номер мы перезвоним</span>
+                <button class="close-btn"></button>
+                <input class="input-item" name="#" type="text" placeholder="Ваше имя">
+                <input class="input-item" name="#" type="text" placeholder="Ваш телефон">
+                <button class="modal-btn" name="#" type="submit">Отправить</button>
+            </form>
+        </div>
+
+        <div class="main-content">
+            <div class="text-wrapper">
+                <h1 class="main-title">Сайдинг, фасадные панели, водосток, кровля напрямую от завода-изготовителя по
+                    лучшей
+                    цене</h1>
+                <div class="content-inner">
+                    <button class="add-sale">
+                        <span>Рассчитать стоимость</span>
+                    </button>
+                    <p class="sale-sale">И получить скидку до <span class="red-title">10%</span></p>
+                </div>
+
+                <div class="counter-wrapper">
+                    <p class="text-counter">До окончания скидки осталось</p>
+
+                    <div class="counter-inner" data-date="2022-06-24 23:59:59">
+                        <div class="counter-item">
+                            <span class="counter-days"></span>
+                            <span class="counter-text">Дней</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-hours"></span>
+                            <span class="counter-text">Часов</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-minutes"></span>
+                            <span class="counter-text">Минут</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-seconds"></span>
+                            <span class="counter-text">Секунд</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="bg-main">
+                <img src="images/bg.png" alt="" class="bg-img">
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="reasons">
     <div class="container">
-      <div class="products-wrapper">
-        <h2 class="products-title"><span class="red-title">К</span>аталоги Döcke</h2>
-
-        <div class="products-top-wrapper">
-          <div class="products-title-wrapper">
-            <h3 class="category-title">Виниловый сайдинг</h3>
-            <div class="category-counter">
-              <span class="siries-num">5</span>
-              <span class="siries-text">серий</span>
+        <div class="reasons-inner">
+            <div class="reasons-wrapper">
+                <div class="reasons-content">
+                    <p class="big-decor">5</p>
+                    <p class="reasons-decor-text">причин заказать у нас</p>
+                </div>
+                <div class="item-wrapper">
+                    <div class="reasons-item">
+                        <span class="reasons-decor"></span>
+                        <p class="reasons-text">94% продукции в наличии</p>
+                    </div>
+                    <div class="reasons-item">
+                        <span class="reasons-decor"></span>
+                        <p class="reasons-text">Срок поставки до 48 часов (на товар в наличии)</p>
+                    </div>
+                    <div class="reasons-item">
+                        <span class="reasons-decor"></span>
+                        <p class="reasons-text">Принимаем возврат до 180 дней ПОШТУЧНО</p>
+                    </div>
+                    <div class="reasons-item">
+                        <span class="reasons-decor"></span>
+                        <p class="reasons-text">Реальные скидки от объёма</p>
+                    </div>
+                    <div class="reasons-item">
+                        <span class="reasons-decor"></span>
+                        <p class="reasons-text">Гарантия самой выгодной цены в Москве</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <button class="view-all-category">
-              <span>Смотреть все</span>
-          </button>
-        </div>
-
-        <div class="products-siries-inner">
-
-          <div class="products-siries-item">
-            <img src="images/preview-category/11.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Серия LUX под дерево</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/preview-category/21.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Серия LUX под камень</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/preview-category/3.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Premium</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/preview-category/4.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Standard</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/preview-category/11.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Софиты</p>
-          </div>
-
-        </div>
-
-        <div class="products-top-wrapper">
-          <div class="products-title-wrapper">
-            <h3 class="category-title">Фасадные панели</h3>
-            <div class="category-counter">
-              <span class="siries-num">10</span>
-              <span class="siries-text">серий</span>
+            <div class="reasons-bg">
+                <img src="images/bg-decor.png" alt="" class="decor-bg">
+                <div class="pulse pulse-1"></div>
+                <div class="pulse pulse-2"></div>
+                <div class="pulse pulse-3"></div>
             </div>
-          </div>
-          <button class="view-all-category">
-            <span>Смотреть все</span>
-          </button>
         </div>
-
-        <div class="products-siries-inner">
-
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/Dufour_ishgil_prev.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция DUFOUR</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/STEIN_YAntarnyy.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция STEIN</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/BURG_tsvet_shersti.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция BURG</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/FLEMISH_Korichnevyy.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция FLEMISH</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/FELS_Terrakotovyy.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция FELS</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/BERG_Seryy.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция BERG</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/STERN_Rodos.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция STERN</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/SLATE_SHamoni.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция СЛАНЕЦ</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/KLINKER_Monte.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция KLINKER</p>
-          </div>
-          <div class="products-siries-item">
-            <img src="images/fasad-panel/EDEL_TSirkon.png" alt="" class="prewiev-img">
-            <p class="products-siries-id">Коллекция EDEL</p>
-          </div>
-
-        </div>
-
-      </div>
     </div>
-  </section>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/jquery-3.6.0.min.js"></script>
+</section>
 
-  <script src="js/jquery.time-to.js"></script>
-  <script src="js/main.js"></script>
+<section class="products">
+    <div class="container">
+        <div class="products-wrapper">
+            <h2 class="products-title"><span class="red-title">К</span>аталоги Döcke</h2>
+
+            <div class="products-top-wrapper">
+                <div class="products-title-wrapper">
+                    <h3 class="category-title">Виниловый сайдинг</h3>
+                    <div class="category-counter">
+                        <span class="siries-num">5</span>
+                        <span class="siries-text">серий</span>
+                    </div>
+                </div>
+                <button class="view-all-category">
+                    <span>Смотреть все</span>
+                </button>
+            </div>
+
+            <div class="products-siries-inner">
+
+                <div class="products-siries-item">
+                    <img src="images/preview-category/11.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Серия LUX под дерево</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/preview-category/21.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Серия LUX под камень</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/preview-category/3.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Premium</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/preview-category/4.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Standard</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/preview-category/11.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Софиты</p>
+                </div>
+
+            </div>
+
+            <div class="products-top-wrapper">
+                <div class="products-title-wrapper">
+                    <h3 class="category-title">Фасадные панели</h3>
+                    <div class="category-counter">
+                        <span class="siries-num">10</span>
+                        <span class="siries-text">серий</span>
+                    </div>
+                </div>
+                <button class="view-all-category">
+                    <span>Смотреть все</span>
+                </button>
+            </div>
+
+            <div class="products-siries-inner">
+
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/Dufour_ishgil_prev.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция DUFOUR</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/STEIN_YAntarnyy.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция STEIN</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/BURG_tsvet_shersti.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция BURG</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/FLEMISH_Korichnevyy.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция FLEMISH</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/FELS_Terrakotovyy.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция FELS</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/BERG_Seryy.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция BERG</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/STERN_Rodos.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция STERN</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/SLATE_SHamoni.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция СЛАНЕЦ</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/KLINKER_Monte.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция KLINKER</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/fasad-panel/EDEL_TSirkon.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Коллекция EDEL</p>
+                </div>
+
+            </div>
+
+            <div class="products-top-wrapper">
+                <div class="products-title-wrapper">
+                    <h3 class="category-title">Кровля</h3>
+                    <div class="category-counter">
+                        <span class="siries-num">14</span>
+                        <span class="siries-text">серий</span>
+                    </div>
+                </div>
+                <button class="view-all-category">
+                    <span>Смотреть все</span>
+                </button>
+            </div>
+
+            <div class="products-siries-inner">
+
+                <div class="products-siries-item">
+                    <img src="images/roof/sapporo_zrelyy_kashtan_prev1.jpg" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Саппоро зрелый каштан</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/roof/zheneva_vagasi_prev1.jpg" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Женева Вагаси</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/roof/Sapporo_sliva_prev.jpg" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Саппоро Слива</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/roof/Sapporo_vagasi_prev.jpg" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Женева Мускат</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/roof/Sapporo_kofe_prev.jpg" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Саппоро кофе</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/roof/Sapporo_sliva_prev.jpg" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Женева Чили</p>
+                </div>
+
+            </div>
+
+            <div class="products-top-wrapper">
+                <div class="products-title-wrapper">
+                    <h3 class="category-title">Водосток</h3>
+                    <div class="category-counter">
+                        <span class="siries-num">4</span>
+                        <span class="siries-text">серии</span>
+                    </div>
+                </div>
+                <button class="view-all-category">
+                    <span>Смотреть все</span>
+                </button>
+            </div>
+
+            <div class="products-siries-inner">
+
+                <div class="products-siries-item">
+                    <img src="images/waterstock/all_plombir_1.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Серия Premium</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/waterstock/LUX_shok1_1_.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Серия Lux</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/waterstock/zelenyy_1.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Серия Standard</p>
+                </div>
+                <div class="products-siries-item">
+                    <img src="images/waterstock/vodosbornik.png" alt="" class="prewiev-img">
+                    <p class="products-siries-id">Водосборник</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="popular-product">
+    <div class="container">
+        <div class="popular-wrapper">
+            <div class="products-top-wrapper">
+                <div class="products-title-wrapper">
+                    <h3 class="category-title">Популярные коллекции</h3>
+                </div>
+                <button class="view-all-category">
+                    <span>Смотреть все</span>
+                </button>
+            </div>
+            <div class="popular-inner">
+                <div class="popular-item">
+                    <a href="#" class="popular-link">
+                        <img src="images/popular-item/BRUS_D6S_PLOMBIR_PREV.png" alt="" class="popular-img">
+                    </a>
+                    <div class="popular-bottom-text">
+                        <span class="popular-text">Брус пломбир</span>
+                        <span class="popular-price">1200 p.</span>
+                        <span class="popular-category">Сайдинг</span>
+                        <a href="#" class="popular-bye">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <a href="#" class="popular-link">
+                        <img src="images/waterstock/zelenyy_1.png" alt="" class="popular-img">
+                    </a>
+                    <div class="popular-bottom-text">
+                        <span class="popular-text">Серия Standard</span>
+                        <span class="popular-price">1000 p.</span>
+                        <span class="popular-category">Водосток</span>
+                        <a href="#" class="popular-bye">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <a href="#" class="popular-link">
+                        <img src="images/fasad-panel/BERG_Seryy.png" alt="" class="popular-img">
+                    </a>
+                    <div class="popular-bottom-text">
+                        <span class="popular-text">Берг серый</span>
+                        <span class="popular-price">850 p.</span>
+                        <span class="popular-category">Фасадные панели</span>
+                        <a href="#" class="popular-bye">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <a href="#" class="popular-link">
+                        <img src="images/preview-category/11.png" alt="" class="popular-img">
+                    </a>
+                    <div class="popular-bottom-text">
+                        <span class="popular-text">Брус пломбир</span>
+                        <span class="popular-price">659 p.</span>
+                        <span class="popular-category">Фасадные панели</span>
+                        <a href="#" class="popular-bye">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <a href="#" class="popular-link">
+                        <img src="images/popular-item/BRUS_D6S_PLOMBIR_PREV.png" alt="" class="popular-img">
+                    </a>
+                    <div class="popular-bottom-text">
+                        <span class="popular-text">Брус пломбир</span>
+                        <span class="popular-price">1200 p.</span>
+                        <a href="#" class="popular-bye">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <a href="#" class="popular-link">
+                        <img src="images/popular-item/BRUS_D6S_PLOMBIR_PREV.png" alt="" class="popular-img">
+                    </a>
+                    <div class="popular-bottom-text">
+                        <span class="popular-text">Брус пломбир</span>
+                        <span class="popular-price">1200 p.</span>
+                        <a href="#" class="popular-bye">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <a href="#" class="popular-link">
+                        <img src="images/popular-item/BRUS_D6S_PLOMBIR_PREV.png" alt="" class="popular-img">
+                    </a>
+                    <div class="popular-bottom-text">
+                        <span class="popular-text">Брус пломбир</span>
+                        <span class="popular-price">1200 p.</span>
+                        <a href="#" class="popular-bye">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <a href="#" class="popular-link">
+                        <img src="images/popular-item/BRUS_D6S_PLOMBIR_PREV.png" alt="" class="popular-img">
+                    </a>
+                    <div class="popular-bottom-text">
+                        <span class="popular-text">Брус пломбир</span>
+                        <span class="popular-price">1200 p.</span>
+                        <a href="#" class="popular-bye">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="container">
+
+    </div>
+</section>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/loopcounter.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
