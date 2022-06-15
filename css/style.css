@@ -37,7 +37,7 @@ body {
     max-width: 500px;
     width: 50%;
     height: 250px;
-    background: #000;
+    background: #232427;
     top: 32%;
     right: 31%;
     z-index: 10;
@@ -458,7 +458,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 10px 60px;
+    padding: 10px 10px 60px;
 }
 
 .category-counter {
@@ -697,6 +697,10 @@ body {
     transform: rotate(320deg);
 }
 
+.slick-slide {
+    margin: 10px;
+}
+
 .benefits {
     padding: 60px 0 60px;
     background-color: #1D2027;
@@ -760,7 +764,7 @@ body {
     position: absolute;
     content: '';
     width: 16px;
-    border-bottom:3px solid #c20018;
+    border-bottom: 3px solid #c20018;
     top: 0;
     right: 0;
 }
@@ -769,7 +773,7 @@ body {
     position: absolute;
     content: '';
     width: 16px;
-    border-bottom:3px solid #c20018;
+    border-bottom: 3px solid #c20018;
     top: 0;
     right: 0;
     transform: rotate(90deg);
@@ -784,9 +788,11 @@ body {
     margin-left: 5%;
     font-size: 0;
 }
+
 li.slick-active {
     background-color: #c20018;
 }
+
 .slick-dots > li {
     width: 8px;
     height: 8px;
@@ -794,6 +800,7 @@ li.slick-active {
     border: 1px solid #c20018;
     margin: 0 3px;
 }
+
 .slick-dots li button {
     font-size: 0;
 }
@@ -815,8 +822,9 @@ li.slick-active {
 .view-all-review span {
     display: block;
 }
+
 .review-item {
- display: flex !important;
+    display: flex !important;
     overflow: hidden;
 }
 
@@ -861,7 +869,7 @@ li.slick-active {
 }
 
 .review-minus,
-.review-content-main{
+.review-content-main {
     margin-top: 20px;
     display: flex;
 }
@@ -875,6 +883,122 @@ li.slick-active {
     margin-right: 10px;
 }
 
+.jobs {
+    padding: 90px 0 90px;
+}
+
+.jobs-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.jobs-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.jobs-img {
+    transform: scale(1.8);
+    width: 100%;
+    z-index: 1;
+    filter: brightness(0.3) grayscale(100%);
+}
+
+.jobs-img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    z-index: -1;
+}
+
+.jobs-content {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.jobs-wrap-text {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-item,
+.jobs-num {
+    color: white;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.jobs-link {
+    display: block;
+    background-color: #fbac15;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 39px;
+    height: 38px;
+    padding: 10px;
+    margin-left: 30px;
+}
+.question {
+    padding: 90px 0 90px;
+    background: #F2F3F6;
+}
+
+.question-text {
+    max-width: 50%;
+}
+
+.question-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 312px;
+}
+
+.question-bg {
+    width: 50%;
+}
+
+.bottom-img {
+    display: block;
+    width: 100%;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-text {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #989394;
+    line-height: 41px;
+}
+
+.input-bottom {
+    position: relative;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.question-subtitle {
+    font-size: 45px;
+    color: #1D2027;
+}
+
+.input-bottom-btn {
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #fbac15;
+    color: white;
+}
 @media (max-width: 1100px) {
     .oficial-text {
         color: #797467;
@@ -930,49 +1054,70 @@ li.slick-active {
     .counter-wrapper {
         margin-top: 22px;
     }
+
     .reasons {
-         padding: 70px 0 70px;
-     }
+        padding: 70px 0 70px;
+    }
+
     .reasons-bg {
         max-width: 50%;
     }
+
     .pulse {
         width: 300px;
         height: 300px;
     }
+
     .reasons-text {
         font-size: 16px;
     }
+
     .big-decor {
         font-size: 66px;
     }
+
     .reasons-decor-text {
         font-size: 26px;
     }
+
     .item-wrapper {
         margin-left: 30px;
     }
+
     .reasons-text {
         line-height: 20px;
     }
+
     .products {
         padding: 70px 0 70px;
     }
+
     .products-top-wrapper {
         padding: 35px 10px 35px;
     }
+
     .products-title {
         font-size: 35px;
     }
+
     .category-title {
         font-size: 28px;
     }
+
     .siries-num, .siries-text {
         font-size: 14px;
     }
+
     .view-all-category span {
         font-size: 12px;
     }
+
+    .jobs-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
 
 }
 
@@ -998,15 +1143,18 @@ li.slick-active {
         font-size: 12px;
         padding: 5px 10px;
     }
+
     .counter-item {
         width: 80px;
     }
+
     .add-sale {
         font-size: 16px;
         font-weight: 500;
         margin-top: 12px;
         padding: 8px 13px;
     }
+
     .counter-item {
         width: 61px;
         height: 62px;
@@ -1046,9 +1194,11 @@ li.slick-active {
         left: -58px;
         bottom: -5px;
     }
+
     .text-wrapper {
         width: 35%;
     }
+
     .main-title {
         font-weight: 500;
         font-size: 18px;
@@ -1064,11 +1214,16 @@ li.slick-active {
         color: #c20018;
         font-size: 27px;
     }
+
     .counter-text {
         font-size: 10px;
     }
+
     .counter-inner {
         padding-top: 8px;
+    }
+    .products {
+        padding: 40px 0 40px;
     }
 }
 
@@ -1077,47 +1232,59 @@ li.slick-active {
         right: 8%;
         width: 80%;
     }
+
     .input-text {
         margin-top: 18px;
     }
+
     .modal-btn {
         margin-top: 10px;
         width: 100%;
     }
+
     .main {
         padding: 25px 0 25px;
     }
+
     .oficial-text {
         display: none;
     }
+
     .main-content {
         flex-direction: column;
     }
+
     .text-wrapper {
         width: 100%;
     }
+
     .bg-main {
         max-width: 100%;
         padding-top: 20px;
     }
+
     .counter-inner {
         justify-content: center;
     }
+
     .content-inner {
         display: flex;
         justify-content: space-between;
         max-width: 650px;
     }
+
     .add-sale {
         font-size: 14px;
         font-weight: 500;
         margin-top: 12px;
         padding: 5px 10px;
     }
+
     .sale-sale {
         font-size: 13px;
         margin-left: 10px;
     }
+
     .counter-item {
         width: 50px;
         height: 52px;
@@ -1126,47 +1293,70 @@ li.slick-active {
         padding: 5px;
         margin: 4px;
     }
+
     .counter-hours,
     .counter-days,
     .counter-minutes,
     .counter-seconds {
         font-size: 20px;
     }
+
     .reasons {
         padding: 32px 0 8px;
     }
+
     .reasons-inner {
         flex-direction: column;
     }
+
     .reasons-bg {
         padding-top: 40px;
     }
+
     .reasons-content {
         justify-content: center;
     }
+
     .pulse {
         height: 300px;
         width: 300px;
         left: -36%;
         top: 27px;
     }
+
     .reasons-decor-text {
         padding-bottom: 10px;
     }
+
     .view-all-category {
         position: relative;
         padding: 7px 34px 7px 7px;
         background-color: #ccc;
     }
+
+    .products-top-wrapper {
+        padding: 19px 10px 12px;
+    }
+
     .category-counter {
-        margin-left: 14px;
+        margin-left: 6px;
     }
+
     .category-title {
-        font-size: 23px;
+        font-size: 18px;
     }
+
+    .view-all-category {
+        padding: 7px;
+    }
+
     .view-all-category::before {
-        right: 10px;
+        display: none;
     }
+    .view-all-category::after {
+        display: none;
+    }
+
     .view-all-category::after {
         position: absolute;
         content: '';
@@ -1176,11 +1366,27 @@ li.slick-active {
         right: 10px;
         top: 55%;
     }
+
+    .text-item, .jobs-num {
+        color: white;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .jobs-wrap-text {
+        padding: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .jobs-link {
+        width: 51px;
+    }
+
 }
 
 
-
-    @media (max-width: 420px) {
+@media (max-width: 420px) {
     .header-callback {
         font-size: 11px;
         padding: 3px 6px;
@@ -1189,24 +1395,76 @@ li.slick-active {
     .logo {
         max-width: 80px;
     }
+
     .main {
         padding: 10px 0 10px;
     }
+
     .add-sale {
         font-size: 10px;
         font-weight: 500;
         margin-top: 12px;
         padding: 3px 5px;
     }
+
     .pulse {
         height: 250px;
         width: 250px;
         left: -23%;
         top: 37px;
     }
+
     .reasons-bg {
         padding-top: 60px;
     }
+    .products-siries-id {
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 10px 0 6px;
+    }
+
+    .jobs-inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .jobs-link {
+        margin-top: 50px;
+        width: 51px;
+    }
+    .siries-num,
+    .siries-text {
+        font-size: 10px;
+    }
+    .category-title {
+        font-size: 16px;
+    }
+    .products {
+        padding: 20px 0 20px;
+    }
+
+    .view-all-category {
+         padding: 5px;
+         font-size: 12px;
+    }
+    .slick-dots > li {
+        width: 6px;
+        height: 6px;
+        margin: 0 2px;
+    }
+    .products-top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+        padding: 10px 10px 0;
+    }
+    .view-all-category {
+        margin-top: 4px;
+    }
+
 }
 
 @media (max-width: 320px) {

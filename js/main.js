@@ -18,6 +18,16 @@ $(function () {
  $(".popular-inner").slick({
     slidesToShow: 3,
      centerPadding: '60px',
+     responsive: [
+         {
+             breakpoint: 650,
+             settings: {
+                 slidesToShow: 1,
+                 margin: "10px",
+                 centerMode: true,
+             }
+         }
+     ]
  });
     // добавляем класс сослайдером на адаптиве
 
@@ -34,32 +44,33 @@ $(function () {
     mmObj.addListener(myFunction);
 
     $('.products-siries-inner.slider').slick({
-        slidesToShow: 2,
         dots: true,
-        arrows: true,
-        adaptiveHeight: true,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 650,
                 settings: {
                     slidesToShow: 2,
-                    centerMode: true,
-                    centerPadding: '20px',
                 }
-            },
-            {
-                breakpoint: 420,
-                settings: {
-                    slidesToShow: 1
-                }
+
             }
         ]
     })
 
-
+// Слайдер с отзывами
 $(".review-slider").slick({
 
 })
+
+    //добавляем классы при наведении на работы
+
+    $('.jobs-item')
+        .on('mouseenter', function() {
+            $(this).find('.jobs-content').hide();
+        })
+        .on('mouseleave', function() {
+            $(this).find('.jobs-content').show();
+        });
 
 });
 
