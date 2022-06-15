@@ -206,7 +206,7 @@ body {
 }
 
 .text-wrapper {
-    max-width: 40%;
+    width: 40%;
 }
 
 .main-title {
@@ -268,16 +268,24 @@ body {
     margin-top: 40px;
 }
 
+.text-counter {
+    color: #c20018;
+    font-size: 16px;
+    text-align: center;
+}
+
 .counter-inner {
-    width: 60%;
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
 }
 
 .counter-item {
-    max-width: 140px;
-    height: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
     border: 2px solid #c20018;
     border-radius: 8px;
     padding: 10px;
@@ -290,12 +298,13 @@ body {
     text-align: center;
     color: #c20018;
     font-size: 40px;
-
 }
 
 .counter-text {
     color: #d3d3d3;
+    font-size: 12px;
     display: block;
+    text-align: center;
 }
 
 .reasons {
@@ -616,7 +625,6 @@ body {
     background-color: #232427;
     bottom: 50%;
     left: -16px;
-    border-radius: 50%;
     z-index: 1;
 }
 
@@ -628,7 +636,6 @@ body {
     background-color: #232427;
     bottom: 50%;
     right: -16px;
-    border-radius: 50%;
     z-index: 1;
 }
 
@@ -827,6 +834,32 @@ body {
     .counter-wrapper {
         margin-top: 22px;
     }
+    .reasons {
+         padding: 70px 0 70px;
+     }
+    .reasons-bg {
+        max-width: 50%;
+    }
+    .pulse {
+        width: 300px;
+        height: 300px;
+    }
+    .reasons-text {
+        font-size: 16px;
+    }
+    .big-decor {
+        font-size: 66px;
+    }
+    .reasons-decor-text {
+        font-size: 26px;
+    }
+    .item-wrapper {
+        margin-left: 30px;
+    }
+    .reasons-text {
+        line-height: 20px;
+    }
+
 }
 
 @media (max-width: 860px) {
@@ -850,6 +883,23 @@ body {
     .header-callback {
         font-size: 12px;
         padding: 5px 10px;
+    }
+    .counter-item {
+        width: 80px;
+    }
+    .add-sale {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 12px;
+        padding: 8px 13px;
+    }
+    .counter-item {
+        width: 61px;
+        height: 62px;
+        border: 2px solid #c20018;
+        border-radius: 8px;
+        padding: 5px;
+        margin: 4px;
     }
 }
 
@@ -882,11 +932,101 @@ body {
         left: -58px;
         bottom: -5px;
     }
+    .text-wrapper {
+        width: 35%;
+    }
+    .main-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #797467;
+    }
+
+    .counter-hours,
+    .counter-days,
+    .counter-minutes,
+    .counter-seconds {
+        text-align: center;
+        color: #c20018;
+        font-size: 27px;
+    }
+    .counter-text {
+        font-size: 10px;
+    }
+    .counter-inner {
+        padding-top: 8px;
+    }
 }
 
 @media (max-width: 650px) {
+    .main {
+        padding: 25px 0 25px;
+    }
     .oficial-text {
         display: none;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .text-wrapper {
+        width: 100%;
+    }
+    .bg-main {
+        max-width: 100%;
+        padding-top: 20px;
+    }
+    .counter-inner {
+        justify-content: center;
+    }
+    .content-inner {
+        display: flex;
+        justify-content: space-between;
+        max-width: 650px;
+    }
+    .add-sale {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 12px;
+        padding: 5px 10px;
+    }
+    .sale-sale {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .counter-item {
+        width: 50px;
+        height: 52px;
+        border: 2px solid #c20018;
+        border-radius: 8px;
+        padding: 5px;
+        margin: 4px;
+    }
+    .counter-hours,
+    .counter-days,
+    .counter-minutes,
+    .counter-seconds {
+        font-size: 20px;
+    }
+    .reasons {
+        padding: 32px 0 8px;
+    }
+    .reasons-inner {
+        flex-direction: column;
+    }
+    .reasons-bg {
+        padding-top: 40px;
+    }
+    .reasons-content {
+        justify-content: center;
+    }
+    .pulse {
+        height: 300px;
+        width: 300px;
+        left: -36%;
+        top: 27px;
+    }
+    .reasons-decor-text {
+        padding-bottom: 10px;
     }
 }
 
@@ -898,6 +1038,24 @@ body {
 
     .logo {
         max-width: 80px;
+    }
+    .main {
+        padding: 10px 0 10px;
+    }
+    .add-sale {
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 12px;
+        padding: 3px 5px;
+    }
+    .pulse {
+        height: 250px;
+        width: 250px;
+        left: -23%;
+        top: 37px;
+    }
+    .reasons-bg {
+        padding-top: 60px;
     }
 }
 
