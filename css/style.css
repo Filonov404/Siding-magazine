@@ -990,14 +990,19 @@ li.slick-active {
 }
 
 .bottom-text {
+    position: relative;
     margin-top: 30px;
     font-size: 18px;
-
     line-height: 41px;
 }
 
+.red-bg {
+    padding: 3px;
+    background-color: #c20018;
+    color: white;
+}
+
 .input-bottom {
-    position: relative;
     background: #F4F6F8;
     border: none;
     margin-top: 30px;
@@ -1014,10 +1019,13 @@ li.slick-active {
     margin-top: 30px;
     padding: 10px 20px;
     background: #fbac15;
-    color: white;
+    color: #1D2027;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .footer {
+    background: #1D2027;
     padding: 90px 0 90px;
 }
 
