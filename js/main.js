@@ -22,9 +22,15 @@ $(function () {
          {
              breakpoint: 650,
              settings: {
-                 slidesToShow: 1,
-                 margin: "10px",
-                 centerMode: true,
+                 slidesToShow: 2,
+             }
+         },
+         {
+             breakpoint: 420,
+             settings: {
+                 slidesToShow: 2,
+                 arrows: false,
+                 dots: true,
              }
          }
      ]

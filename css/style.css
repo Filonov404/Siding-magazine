@@ -518,9 +518,9 @@ body {
 }
 
 .products-siries-item {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
     background-color: #fff;
     max-width: 275px;
     margin: 10px;
@@ -719,9 +719,24 @@ body {
     height: 267px;
 }
 
-.content-img {
+.content-img1 {
     width: 70%;
-    overflow: hidden;
+    background-image: url(../images/benefits/Фасадные-панели-Docke-Klinker-под-клинкерный-кирпич-цвета-Каракумы.png);
+}
+
+.content-img2 {
+    width: 70%;
+    background-image: url(../images/benefits/Гибкая-черепица-Docke-PREMIUM-ШЕФФИЛД-Фладен-купить-мягкую-кровлю-Дёке.png);
+}
+
+.content-img3 {
+    width: 70%;
+    background-image: url(../images/benefits/Купить-водостоки-для-крыши-—-цены-на-пластиковые-водосточные-системы-«Дёке».png);
+}
+
+.content-img4 {
+    width: 70%;
+    background-image: url(../images/benefits/Pdf.png);
 }
 
 .benefits-img {
@@ -807,7 +822,6 @@ li.slick-active {
 
 .review {
     padding: 90px 0 90px;
-    background: #F4F6F8;
 }
 
 .view-all-review {
@@ -824,26 +838,31 @@ li.slick-active {
 }
 
 .review-item {
-    display: flex !important;
-    overflow: hidden;
+    position: relative;
+    background: #F4F6F8;
+    height: 300px;
 }
 
 .review-img-wrap {
-    width: 44%;
-    background-image: url(../images/rewiew/Deafult-Profile-Pitcher.png);
+    position: absolute;
+    right: 35px;
+    bottom: -19%;
+    width: 315px;
+    height: 315px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    border-radius: 50%;
 }
 
 .review-img {
     width: 100%;
     display: block;
+    border-radius: 5%;
 }
 
 .review-content {
     width: 66%;
-    background: #fff;
     padding: 25px;
 }
 
@@ -868,6 +887,10 @@ li.slick-active {
     display: flex;
 }
 
+.plus-text {
+    margin-left: 11px;
+}
+
 .review-minus,
 .review-content-main {
     margin-top: 20px;
@@ -884,7 +907,8 @@ li.slick-active {
 }
 
 .jobs {
-    padding: 90px 0 90px;
+    padding: 90px 0 175px;
+    background: #F4F6F8;
 }
 
 .jobs-inner {
@@ -942,23 +966,16 @@ li.slick-active {
     padding: 10px;
     margin-left: 30px;
 }
+
 .question {
     padding: 90px 0 90px;
-    background: #F2F3F6;
-}
-
-.question-text {
-    max-width: 50%;
+    background-image: url(../images/formBg.png);
+    background-size: cover;
+    background-position:  bottom;
 }
 
 .question-wrapper {
     display: flex;
-    justify-content: space-between;
-    height: 312px;
-}
-
-.question-bg {
-    width: 50%;
 }
 
 .bottom-img {
@@ -975,13 +992,13 @@ li.slick-active {
 .bottom-text {
     margin-top: 30px;
     font-size: 18px;
-    color: #989394;
+
     line-height: 41px;
 }
 
 .input-bottom {
     position: relative;
-    color: white;
+    background: #F4F6F8;
     border: none;
     margin-top: 30px;
     padding: 10px;
@@ -999,6 +1016,11 @@ li.slick-active {
     background: #fbac15;
     color: white;
 }
+
+.footer {
+    padding: 90px 0 90px;
+}
+
 @media (max-width: 1100px) {
     .oficial-text {
         color: #797467;
@@ -1118,6 +1140,33 @@ li.slick-active {
         grid-template-rows: repeat(2, 1fr);
     }
 
+    .benefits-subtitle {
+        font-size: 15px;
+        padding-top: 22px;
+    }
+
+    .benefits-content {
+        padding: 20px;
+    }
+
+    .review-content {
+        width: 50%;
+    }
+    .review-content-middle {
+        margin-top: 6px;
+    }
+    .review-minus,
+    .review-content-main {
+        margin-top: 10px;
+    }
+    .review-content-text {
+        font-size: 12px;
+        height: 110px;
+        overflow: hidden;
+    }
+    .plus-text {
+        font-size: 12px;
+    }
 
 }
 
@@ -1155,14 +1204,39 @@ li.slick-active {
         padding: 8px 13px;
     }
 
+    .popular-product {
+        padding: 30px 0 30px;
+    }
+
     .counter-item {
-        width: 61px;
-        height: 62px;
-        border: 2px solid #c20018;
-        border-radius: 8px;
         padding: 5px;
         margin: 4px;
     }
+
+    .popular-item {
+        height: 426px;
+    }
+
+    .popular-text {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .popular-price {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .popular-category {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .popular-bye {
+        margin-top: 10px;
+        padding: 6px 11px;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -1222,10 +1296,47 @@ li.slick-active {
     .counter-inner {
         padding-top: 8px;
     }
+
     .products {
         padding: 40px 0 40px;
     }
+
+    .popular-item {
+        height: 356px;
+    }
+
+    .benefits-subtitle {
+        font-size: 14px;
+        padding-top: 4px;
+    }
+
+    .benefits-subtitle {
+        font-size: 13px;
+        padding-top: 5px;
+    }
+
+    .benefits-text {
+        font-size: 12px;
+    }
+    .review-item {
+        height: inherit;
+    }
+    .review-img-wrap {
+        display: none;
+    }
+    .review-content {
+         width: inherit;
+        margin: 0 auto;
+    }
+    .question {
+        padding: 30px 0 30px;
+        background-position: inherit;
+    }
+    .question-subtitle {
+        font-size: 30px;
+    }
 }
+
 
 @media (max-width: 650px) {
     .modal-wrapper {
@@ -1334,6 +1445,9 @@ li.slick-active {
         background-color: #ccc;
     }
 
+    .products-siries-item {
+        height: 229px;
+    }
     .products-top-wrapper {
         padding: 19px 10px 12px;
     }
@@ -1353,6 +1467,7 @@ li.slick-active {
     .view-all-category::before {
         display: none;
     }
+
     .view-all-category::after {
         display: none;
     }
@@ -1383,6 +1498,74 @@ li.slick-active {
         width: 51px;
     }
 
+    .popular-price {
+        font-size: 15px;
+        line-height: 14px;
+    }
+
+    .popular-category {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .popular-item {
+        height: 290px;
+    }
+
+    .benefits {
+        padding: 30px 0 30px;
+    }
+
+    .benefits-title {
+        padding: 7px 0 40px;
+    }
+
+    .benefits__wrapper-item {
+        height: 364px;
+        margin-top: 40px;
+    }
+
+    .benefits-content {
+        width: 40%;
+    }
+
+    .content-img1 {
+        width: 60%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url(../images/benefits/Фасадные-панели-Docke-Klinker-под-клинкерный-кирпич-цвета-Каракумы.png);
+    }
+
+    .content-img2 {
+        width: 60%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/benefits/Гибкая-черепица-Docke-PREMIUM-ШЕФФИЛД-Фладен-купить-мягкую-кровлю-Дёке.png);
+    }
+
+    .content-img3 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60%;
+        background-image: url(../images/benefits/Купить-водостоки-для-крыши-—-цены-на-пластиковые-водосточные-системы-«Дёке».png);
+    }
+
+    .content-img4 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60%;
+        background-image: url(../images/benefits/Pdf.png);
+    }
+
+    .review {
+        padding: 20px 0 20px;
+    }
+    .jobs {
+        padding: 20px 0 20px;
+    }
 }
 
 
@@ -1417,6 +1600,7 @@ li.slick-active {
     .reasons-bg {
         padding-top: 60px;
     }
+
     .products-siries-id {
         text-align: center;
         font-weight: 700;
@@ -1434,26 +1618,31 @@ li.slick-active {
         margin-top: 50px;
         width: 51px;
     }
+
     .siries-num,
     .siries-text {
         font-size: 10px;
     }
+
     .category-title {
         font-size: 16px;
     }
+
     .products {
         padding: 20px 0 20px;
     }
 
     .view-all-category {
-         padding: 5px;
-         font-size: 12px;
+        padding: 5px;
+        font-size: 12px;
     }
+
     .slick-dots > li {
         width: 6px;
         height: 6px;
         margin: 0 2px;
     }
+
     .products-top-wrapper {
         display: flex;
         justify-content: space-between;
@@ -1461,8 +1650,46 @@ li.slick-active {
         align-items: start;
         padding: 10px 10px 0;
     }
+
     .view-all-category {
         margin-top: 4px;
+    }
+
+    .benefits__wrapper-item {
+        height: 288px;
+    }
+
+    .benefits-content {
+        width: 50%;
+    }
+
+    .content-img1 {
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url(../images/benefits/Фасадные-панели-Docke-Klinker-под-клинкерный-кирпич-цвета-Каракумы.png);
+    }
+
+    .content-img2 {
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/benefits/Гибкая-черепица-Docke-PREMIUM-ШЕФФИЛД-Фладен-купить-мягкую-кровлю-Дёке.png);
+    }
+
+    .content-img3 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+        background-image: url(../images/benefits/Купить-водостоки-для-крыши-—-цены-на-пластиковые-водосточные-системы-«Дёке».png);
+    }
+
+    .content-img4 {
+        background-position: center;
+        width: 50%;
+        background-image: url(../images/benefits/Pdf.png);
     }
 
 }
