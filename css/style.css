@@ -16,6 +16,10 @@ button {
     color: inherit;
 }
 
+li{
+    list-style: none;
+}
+
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Prompt', sans-serif;
  */
@@ -283,7 +287,7 @@ body {
 .counter-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80px;
     height: 80px;
     border: 2px solid #c20018;
@@ -830,6 +834,7 @@ li.slick-active {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
+    margin-bottom: 10px;
     background-color: #ccc;
 }
 
@@ -913,6 +918,7 @@ li.slick-active {
 
 .jobs-inner {
     display: grid;
+    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
@@ -920,13 +926,14 @@ li.slick-active {
 .jobs-item {
     overflow: hidden;
     position: relative;
+    border-radius: 4px;
 }
 
 .jobs-img {
-    transform: scale(1.8);
+    transform: scale(3);
     width: 100%;
     z-index: 1;
-    filter: brightness(0.3) grayscale(100%);
+    filter: blur(0.4px) grayscale(100%)  brightness(68%);
 }
 
 .jobs-img:hover {
@@ -969,13 +976,24 @@ li.slick-active {
 
 .question {
     padding: 90px 0 90px;
-    background-image: url(../images/formBg.png);
-    background-size: cover;
-    background-position:  bottom;
 }
 
+.question-text {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.question-text form {
+    width: 100%;
+}
 .question-wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-content {
+    padding: 0 10px;
 }
 
 .bottom-img {
@@ -984,16 +1002,14 @@ li.slick-active {
 }
 
 .form-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
+    max-width: 500px;
 }
 
 .bottom-text {
-    position: relative;
-    margin-top: 30px;
     font-size: 18px;
     line-height: 41px;
+
 }
 
 .red-bg {
@@ -1003,13 +1019,16 @@ li.slick-active {
 }
 
 .input-bottom {
+    display: block;
     background: #F4F6F8;
     border: none;
     margin-top: 30px;
     padding: 10px;
+    width: 100%;
 }
 
 .question-subtitle {
+    margin-bottom: 30px;
     font-size: 45px;
     color: #1D2027;
 }
@@ -1022,11 +1041,94 @@ li.slick-active {
     color: #1D2027;
     font-size: 20px;
     font-weight: 700;
+    width: 100%;
 }
 
 .footer {
-    background: #1D2027;
+    background: #cacacb;
     padding: 90px 0 90px;
+}
+
+.footer-wrapper {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: contents;
+}
+
+.phone-item,
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.phone-link-footer,
+.city-name {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1D2027;
+}
+
+.phone-link-footer::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/icons/phone-bottom.svg);
+    width: 17px;
+    height: 17px;
+    left: -26px;
+    top: 0;
+}
+
+.bottom-callback {
+    margin-top: 6px;
+    color: #c20018;
+    font-size: 17px;
+    border-bottom: 2px dashed #c20018;
+    width: 147px;
+}
+
+.working-mode {
+    margin-top: 11px;
+    color: #8A8B90;
+}
+
+.city-name::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/icons/map-icon.svg);
+    width: 17px;
+    height: 21px;
+    left: -26px;
+    top: 0;
+}
+
+.list-item {
+    padding: 8px 0 8px;
+
+}
+
+.list-title {
+    font-size: 20px;
+    color: #232427;
+    font-weight: 700;
+}
+
+.byers-link,
+.catalog-link {
+    font-size: 15px;
+    color: #707070;
+    font-weight: 700;
+}
+
+.list-byers,
+.catalog-list {
+    padding-top: 20px;
 }
 
 @media (max-width: 1100px) {
@@ -1244,7 +1346,12 @@ li.slick-active {
         margin-top: 10px;
         padding: 6px 11px;
     }
-
+    .question-subtitle {
+        font-size: 30px;
+    }
+    .bottom-text {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 750px) {
@@ -1466,6 +1573,7 @@ li.slick-active {
 
     .category-title {
         font-size: 18px;
+        margin-bottom: 4px;
     }
 
     .view-all-category {
@@ -1573,6 +1681,57 @@ li.slick-active {
     }
     .jobs {
         padding: 20px 0 20px;
+    }
+    .bottom-text {
+        margin-top: 15px;
+        font-size: 12px;
+        line-height: 41px;
+    }
+    .input-bottom {
+        background: #F4F6F8;
+        border: none;
+        margin-top: 12px;
+        padding: 10px;
+    }
+    .question-wrapper {
+        flex-direction: column-reverse;
+    }
+    .question-subtitle {
+        font-size: 28px;
+        text-align: center;
+    }
+    .bottom-text {
+        font-size: 16px;
+        line-height: 41px;
+        text-align: center;
+        display: block;
+        padding-bottom: 19px;
+    }
+    .question-text {
+        padding: 0 10px;
+        width: 80%;
+    }
+
+    .footer-wrapper {
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 20px 0 20px;
+    }
+
+    .logo-bottom {
+        margin-bottom: 20px;
+    }
+    .bottom-callback {
+        margin-top: 6px;
+        color: #c20018;
+        font-size: 11px;
+        border-bottom: 1px dashed #c20018;
+        width: 97px;
+    }
+    .menu {
+        display: none;
     }
 }
 
@@ -1698,6 +1857,12 @@ li.slick-active {
         background-position: center;
         width: 50%;
         background-image: url(../images/benefits/Pdf.png);
+    }
+    .bottom-text {
+        font-size: 12px;
+    }
+    .input-bottom-btn {
+        font-size: 16px;
     }
 
 }
