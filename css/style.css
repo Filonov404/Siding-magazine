@@ -16,6 +16,47 @@ button {
     color: inherit;
 }
 
+.scrollUp {
+    content: '';
+    display: none;
+    border: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 41px;
+    height: 41px;
+    background-color: #fbac15;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.scrollUp:hover {
+    background-color: #c20018;
+}
+
+.scrollUp::after {
+    content: '';
+    position: fixed;
+    width: 17px;
+    border-bottom: 3px solid #232427;
+    right: 31px;
+    z-index: 4;
+    transform: rotate(45deg);
+
+}
+
+.scrollUp::before {
+    content: '';
+    position: fixed;
+    width: 17px;
+    border-bottom: 3px solid #232427;
+    right: 41px;
+    z-index: 4;
+    transform: rotate(135deg);
+
+}
+
+
 li{
     list-style: none;
 }
@@ -116,6 +157,7 @@ body {
 
 .header {
     padding: 12px 0 15px;
+    background-color: #e7e7e7;
 }
 
 .header-wrapper {
@@ -214,10 +256,10 @@ body {
 }
 
 .main-title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 32px;
-    line-height: 54px;
-    color: #797467;
+    line-height: 46px;
+    color: #31302e;
 }
 
 .red-title {
@@ -1031,6 +1073,7 @@ li.slick-active {
     margin-bottom: 30px;
     font-size: 45px;
     color: #1D2027;
+    line-height: 54px;
 }
 
 .input-bottom-btn {
@@ -1370,6 +1413,7 @@ li.slick-active {
         content: '';
         background-image: url(../images/icons/phone.svg);
         left: -10px;
+        bottom: -18px;
         width: 30px;
         height: 30px;
     }
@@ -1381,7 +1425,7 @@ li.slick-active {
         width: 30px;
         height: 30px;
         left: -58px;
-        bottom: -5px;
+        bottom: -7px;
     }
 
     .text-wrapper {
@@ -1501,7 +1545,7 @@ li.slick-active {
 
     .add-sale {
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 700;
         margin-top: 12px;
         padding: 5px 10px;
     }
@@ -1682,11 +1726,7 @@ li.slick-active {
     .jobs {
         padding: 20px 0 20px;
     }
-    .bottom-text {
-        margin-top: 15px;
-        font-size: 12px;
-        line-height: 41px;
-    }
+
     .input-bottom {
         background: #F4F6F8;
         border: none;
@@ -1697,15 +1737,17 @@ li.slick-active {
         flex-direction: column-reverse;
     }
     .question-subtitle {
+        line-height: 34px;
         font-size: 28px;
         text-align: center;
+        margin-bottom: 14px;
     }
     .bottom-text {
         font-size: 16px;
         line-height: 41px;
         text-align: center;
         display: block;
-        padding-bottom: 19px;
+        padding-bottom: 8px;
     }
     .question-text {
         padding: 0 10px;
@@ -1738,7 +1780,7 @@ li.slick-active {
 
 @media (max-width: 420px) {
     .header-callback {
-        font-size: 11px;
+        font-size: 14px;
         padding: 3px 6px;
     }
 
@@ -1748,13 +1790,6 @@ li.slick-active {
 
     .main {
         padding: 10px 0 10px;
-    }
-
-    .add-sale {
-        font-size: 10px;
-        font-weight: 500;
-        margin-top: 12px;
-        padding: 3px 5px;
     }
 
     .pulse {
@@ -1779,6 +1814,7 @@ li.slick-active {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
+        padding: 10px;
     }
 
     .jobs-link {

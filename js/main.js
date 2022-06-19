@@ -1,7 +1,6 @@
 $(function () {
-  //СЧЕТЧИК АКЦИИ
+    //СЧЕТЧИК АКЦИИ
     loopcounter('counter-inner');
-
 
     //Модальное окно на главной
 
@@ -15,26 +14,27 @@ $(function () {
 
     //slick-slider слайдер с популярными товарами
 
- $(".popular-inner").slick({
-    slidesToShow: 3,
-     centerPadding: '60px',
-     responsive: [
-         {
-             breakpoint: 650,
-             settings: {
-                 slidesToShow: 2,
-             }
-         },
-         {
-             breakpoint: 420,
-             settings: {
-                 slidesToShow: 2,
-                 arrows: false,
-                 dots: true,
-             }
-         }
-     ]
- });
+    $(".popular-inner").slick({
+        slidesToShow: 3,
+        centerPadding: '60px',
+        responsive: [
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                    dots: true,
+                }
+            }
+        ]
+    });
+
     // добавляем класс сослайдером на адаптиве
 
     function myFunction(x) {
@@ -63,21 +63,35 @@ $(function () {
         ]
     })
 
-// Слайдер с отзывами
-$(".review-slider").slick({
+    // Слайдер с отзывами
 
-})
+    $(".review-slider").slick({})
 
     //добавляем классы при наведении на работы
 
     $('.jobs-item')
-        .on('mouseenter', function() {
+        .on('mouseenter', function () {
             $(this).find('.jobs-content').hide();
         })
-        .on('mouseleave', function() {
+        .on('mouseleave', function () {
             $(this).find('.jobs-content').show();
         });
 
+    //кнопка наверх
+
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $(".scrollUp").fadeIn();
+            } else {
+                $(".scrollUp").fadeOut();
+            }
+        });
+
+        $(".scrollUp").click(function () {
+            $("html, body").animate({scrollTop: 0}, 700);
+            return false;
+        });
+    });
+
 });
-
-
