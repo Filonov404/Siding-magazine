@@ -975,7 +975,7 @@ li.slick-active {
     transform: scale(3);
     width: 100%;
     z-index: 1;
-    filter: blur(0.4px) grayscale(100%)  brightness(68%);
+    filter: blur(0.4) grayscale(100%)  brightness(68%);
 }
 
 .jobs-img:hover {
