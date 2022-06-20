@@ -1,3 +1,5 @@
+@import "siding.css";
+
 *,
 *::before,
 *::after {
@@ -157,7 +159,7 @@ body {
 }
 
 .header {
-    padding: 10px 0 10px;
+    padding: 10px 0 0;
     background-color: #e7e7e7;
 }
 
@@ -312,19 +314,17 @@ body {
 }
 
 .counter-wrapper {
-    margin-top: 40px;
+    margin-top: 58px;
 }
 
 .text-counter {
     color: #c20018;
-    font-size: 16px;
-    text-align: center;
+    font-size: 23px;
 }
 
 .counter-inner {
-    padding-top: 40px;
+    padding-top: 18px;
     display: flex;
-    justify-content: space-between;
 }
 
 .counter-item {
@@ -333,9 +333,10 @@ body {
     justify-content: space-around;
     width: 80px;
     height: 80px;
-    border: 2px solid #c20018;
+    border: 2px solid #23242775;
     border-radius: 8px;
     padding: 10px;
+    margin: 3px;
 }
 
 .counter-hours,
@@ -1090,7 +1091,7 @@ li.slick-active {
 
 .footer {
     background: #cacacb;
-    padding: 90px 0 90px;
+    padding: 60px 0 60px;
 }
 
 .footer-wrapper {
@@ -1220,13 +1221,9 @@ li.slick-active {
     }
 
     .sale-sale {
-        padding-top: 22px;
-        font-size: 17px;
+        padding-top: 12px;
+        font-size: 19px;
         text-align: start;
-    }
-
-    .counter-wrapper {
-        margin-top: 22px;
     }
 
     .reasons {
@@ -1395,7 +1392,7 @@ li.slick-active {
         font-size: 14px;
     }
     .jobs {
-        padding: 0px 0 31px;
+        padding: 0 0 31px;
         background: #F4F6F8;
     }
 }
@@ -1432,7 +1429,7 @@ li.slick-active {
     }
 
     .text-wrapper {
-        width: 35%;
+        width: 45%;
     }
 
     .main-title {
@@ -1560,10 +1557,17 @@ li.slick-active {
     .counter-item {
         width: 50px;
         height: 52px;
-        border: 2px solid #c20018;
         border-radius: 8px;
         padding: 5px;
         margin: 4px;
+    }
+
+    .counter-wrapper {
+        margin-top: 35px;
+    }
+
+    .text-counter {
+        text-align: center;
     }
 
     .counter-hours,
