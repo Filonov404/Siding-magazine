@@ -968,14 +968,14 @@ li.slick-active {
 .jobs-item {
     overflow: hidden;
     position: relative;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .jobs-img {
     transform: scale(3);
     width: 100%;
     z-index: 1;
-    filter: blur(0.4) grayscale(100%)  brightness(68%);
+    filter: grayscale(100%) blur(1px) brightness(68%);
 }
 
 .jobs-img:hover {
@@ -1544,7 +1544,7 @@ li.slick-active {
     }
 
     .add-sale {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
         margin-top: 12px;
         padding: 5px 10px;
@@ -1616,8 +1616,7 @@ li.slick-active {
     }
 
     .category-title {
-        font-size: 18px;
-        margin-bottom: 4px;
+        margin-bottom: 15px;
     }
 
     .view-all-category {
@@ -1738,6 +1737,7 @@ li.slick-active {
         flex-direction: column-reverse;
     }
     .question-subtitle {
+        font-weight: 700;
         line-height: 34px;
         font-size: 28px;
         text-align: center;
@@ -1828,10 +1828,6 @@ li.slick-active {
         font-size: 10px;
     }
 
-    .category-title {
-        font-size: 16px;
-    }
-
     .products {
         padding: 20px 0 20px;
     }
@@ -1896,10 +1892,20 @@ li.slick-active {
         background-image: url(../images/benefits/Pdf.png);
     }
     .bottom-text {
-        font-size: 12px;
+        font-size: 18px;
     }
     .input-bottom-btn {
         font-size: 16px;
+    }
+
+    .view-all-review {
+        width: 151px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #ccc;
     }
 
 }
