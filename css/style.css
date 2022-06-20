@@ -31,7 +31,8 @@ button {
 }
 
 .scrollUp:hover {
-    background-color: #c20018;
+    transition: all .2s ease;
+    background-color: #C2870FFF;
 }
 
 .scrollUp::after {
@@ -156,7 +157,7 @@ body {
 }
 
 .header {
-    padding: 12px 0 15px;
+    padding: 10px 0 10px;
     background-color: #e7e7e7;
 }
 
@@ -968,7 +969,7 @@ li.slick-active {
 .jobs-item {
     overflow: hidden;
     position: relative;
-    border-radius: 8px;
+    border-radius: 2%;
 }
 
 .jobs-img {
@@ -1203,10 +1204,8 @@ li.slick-active {
     }
 
     .main-title {
-        font-weight: 500;
         font-size: 28px;
         line-height: 40px;
-        color: #797467;
     }
 
     .text-counter {
@@ -1395,6 +1394,10 @@ li.slick-active {
     .bottom-text {
         font-size: 14px;
     }
+    .jobs {
+        padding: 0px 0 31px;
+        background: #F4F6F8;
+    }
 }
 
 @media (max-width: 750px) {
@@ -1436,7 +1439,6 @@ li.slick-active {
         font-weight: 700;
         font-size: 27px;
         line-height: 30px;
-        color: #2f2e2c;
     }
 
     .counter-hours,
