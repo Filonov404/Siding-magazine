@@ -45,9 +45,9 @@ $(function () {
         }
     }
 
-    const mmObj = window.matchMedia("(max-width: 650px)");
-    myFunction(mmObj);
-    mmObj.addListener(myFunction);
+    const slider = window.matchMedia("(max-width: 650px)");
+    myFunction(slider);
+
 
     $('.products-siries-inner.slider').slick({
         dots: true,

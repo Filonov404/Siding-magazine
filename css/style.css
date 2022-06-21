@@ -1495,8 +1495,10 @@ li.slick-active {
     }
 }
 
-
 @media (max-width: 650px) {
+    .header-wrapper {
+        padding-bottom: 8px;
+    }
     .modal-wrapper {
         right: 8%;
         width: 80%;
@@ -1622,7 +1624,7 @@ li.slick-active {
     }
 
     .category-title {
-        margin-bottom: 15px;
+        font-size: 20px;
     }
 
     .view-all-category {
