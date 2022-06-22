@@ -94,4 +94,9 @@ $(function () {
         });
     });
 
+   //слайдер просмотренные товары
+    $('.recent-wrapper-slider').slick({
+        slidesToShow: 4,
+    });
+
 });

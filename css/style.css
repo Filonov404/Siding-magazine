@@ -1,4 +1,5 @@
 @import "siding.css";
+@import "product.css";
 
 *,
 *::before,
@@ -72,7 +73,7 @@ font-family: 'Prompt', sans-serif;
 /* #ca0019-- красный */
 
 body {
-    color: #003049;
+    color: #1D2027;
     font-family: "Manrope", sans-serif;
     font-size: 14px;
     line-height: 19px;
