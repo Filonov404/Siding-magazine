@@ -6,10 +6,21 @@
 }
 
 .pagination-link {
+    position: relative;
     margin: 0 10px;
     font-weight: 700;
     font-size: 15px;
     color: #6b6b64;
+}
+
+.pagination-link::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    border-bottom: 2px solid #9d9d9d;
+    transform: rotate(245deg);
+    right: -17px;
+    bottom: 9px;
 }
 
 .pagination-link:hover {
@@ -31,14 +42,13 @@
 }
 
 .product-img {
-    display: flex;
-    justify-content: center;
     padding: 10px;
     width: 40%;
     border: 1px solid #f3f3f3;
 }
 
 .product-img-inner {
+    margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
@@ -63,7 +73,7 @@
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 10px;
-    padding: 0 10px;
+    padding: 0 18px;
     color: #8A8B90;
 }
 
@@ -182,4 +192,86 @@
     font-weight: 700;
     font-size: 26px;
     padding: 20px 0 20px;
+}
+
+@media (max-width: 1100px) {
+    .product-main {
+        padding: 14px 0 4px;
+    }
+    .product-title {
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .description-text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 4px;
+        padding: 0 18px;
+    }
+    .sale-wrapper {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 750px) {
+    .product-main-wrapper {
+        flex-direction: column-reverse;
+    }
+    .product-img,
+    .product-description {
+        width: 100%;
+    }
+    .product-title {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .sale-wrapper {
+        justify-content: center;
+    }
+    .by-now {
+        margin-bottom: 20px;
+    }
+    .product-img {
+        margin-top: 20px;
+    }
+    .product-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 620px) {
+    .recent-name {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        font-size: 12px;
+    }
+    .product-main {
+        padding: 4px 0 4px;
+    }
+    .pagination-inner {
+        display: flex;
+        padding: 10px 0 10px;
+    }
+    .pagination-link {
+        margin: 0 7px;
+        font-size: 12px;
+         color: #b6b6b6;
+    }
+    .pagination-link::after {
+        width: 13px;
+        border-bottom: 1px solid #9d9d9d;
+        transform: rotate(244deg);
+        right: -13px;
+        bottom: 7px;
+    }
+    .recent-img-wrap {
+        padding: 5px;
+    }
+    .recent-content-wrap {
+        padding: 5px;
+    }
 }

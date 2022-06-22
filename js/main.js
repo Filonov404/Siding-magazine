@@ -94,9 +94,33 @@ $(function () {
         });
     });
 
-   //слайдер просмотренные товары
+   //слайдер просмотренные товары, с этим товаром покупают
     $('.recent-wrapper-slider').slick({
         slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                }
+
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 2,
+                }
+
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true
+                }
+
+            }
+        ]
     });
 
 });
