@@ -199,7 +199,6 @@
         padding: 14px 0 4px;
     }
     .product-title {
-        margin-bottom: 0;
         font-size: 30px;
     }
     .description-text {
@@ -246,9 +245,6 @@
 }
 
 @media (max-width: 420px) {
-    body {
-        font-size: 12px;
-    }
     .product-main {
         padding: 4px 0 4px;
     }
