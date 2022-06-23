@@ -621,6 +621,7 @@ body {
 .card-link {
     padding: 10px;
     background-color: #c20018;
+    border-radius: 8px;
     color: white;
     text-align: center;
     width: 100%;
